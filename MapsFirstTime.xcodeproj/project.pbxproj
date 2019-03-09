@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07DA08588225083428CEE3A8 /* Pods_MapsFirstTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FD8281A4198A15D8A4737BE /* Pods_MapsFirstTime.framework */; };
+		EEA8949D2233B0FE0008785F /* LocationSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA8949C2233B0FE0008785F /* LocationSaver.swift */; };
+		EEA8949F2233B8440008785F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA8949E2233B8440008785F /* LoginViewController.swift */; };
 		EEC4CB552232FEBF005C6C83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC4CB542232FEBF005C6C83 /* AppDelegate.swift */; };
 		EEC4CB572232FEBF005C6C83 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC4CB562232FEBF005C6C83 /* ViewController.swift */; };
 		EEC4CB5A2232FEC0005C6C83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEC4CB582232FEC0005C6C83 /* Main.storyboard */; };
@@ -16,6 +19,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2FD8281A4198A15D8A4737BE /* Pods_MapsFirstTime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MapsFirstTime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8603555994C94EAFADE16399 /* Pods-MapsFirstTime.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapsFirstTime.release.xcconfig"; path = "Target Support Files/Pods-MapsFirstTime/Pods-MapsFirstTime.release.xcconfig"; sourceTree = "<group>"; };
+		9CE3B99EAF3F328D080AA458 /* Pods-MapsFirstTime.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapsFirstTime.debug.xcconfig"; path = "Target Support Files/Pods-MapsFirstTime/Pods-MapsFirstTime.debug.xcconfig"; sourceTree = "<group>"; };
+		EEA8949C2233B0FE0008785F /* LocationSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSaver.swift; sourceTree = "<group>"; };
+		EEA8949E2233B8440008785F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EEC4CB512232FEBF005C6C83 /* MapsFirstTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapsFirstTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEC4CB542232FEBF005C6C83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EEC4CB562232FEBF005C6C83 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,17 +39,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07DA08588225083428CEE3A8 /* Pods_MapsFirstTime.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E2B367EA4B20A3DF2423161D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2FD8281A4198A15D8A4737BE /* Pods_MapsFirstTime.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EEC4CB482232FEBF005C6C83 = {
 			isa = PBXGroup;
 			children = (
 				EEC4CB532232FEBF005C6C83 /* MapsFirstTime */,
 				EEC4CB522232FEBF005C6C83 /* Products */,
+				F9EADB6E2A74240F92CE02CD /* Pods */,
+				E2B367EA4B20A3DF2423161D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +77,8 @@
 			children = (
 				EEC4CB542232FEBF005C6C83 /* AppDelegate.swift */,
 				EEC4CB562232FEBF005C6C83 /* ViewController.swift */,
+				EEA8949E2233B8440008785F /* LoginViewController.swift */,
+				EEA8949C2233B0FE0008785F /* LocationSaver.swift */,
 				EEC4CB582232FEC0005C6C83 /* Main.storyboard */,
 				EEC4CB5E2232FEE1005C6C83 /* Assets.xcassets */,
 				EEC4CB602232FEE1005C6C83 /* LaunchScreen.storyboard */,
@@ -67,6 +88,15 @@
 			path = MapsFirstTime;
 			sourceTree = "<group>";
 		};
+		F9EADB6E2A74240F92CE02CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9CE3B99EAF3F328D080AA458 /* Pods-MapsFirstTime.debug.xcconfig */,
+				8603555994C94EAFADE16399 /* Pods-MapsFirstTime.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EEC4CB662232FEE1005C6C83 /* Build configuration list for PBXNativeTarget "MapsFirstTime" */;
 			buildPhases = (
+				3B131B535CA1443C602C65EE /* [CP] Check Pods Manifest.lock */,
 				EEC4CB4D2232FEBF005C6C83 /* Sources */,
 				EEC4CB4E2232FEBF005C6C83 /* Frameworks */,
 				EEC4CB4F2232FEBF005C6C83 /* Resources */,
+				ADFA5428F6D7632C8E5C7DBB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,13 +165,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3B131B535CA1443C602C65EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MapsFirstTime-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ADFA5428F6D7632C8E5C7DBB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MapsFirstTime/Pods-MapsFirstTime-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MapsFirstTime/Pods-MapsFirstTime-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EEC4CB4D2232FEBF005C6C83 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEA8949D2233B0FE0008785F /* LocationSaver.swift in Sources */,
 				EEC4CB572232FEBF005C6C83 /* ViewController.swift in Sources */,
 				EEC4CB5D2232FEC0005C6C83 /* MapsFirstTime.xcdatamodeld in Sources */,
+				EEA8949F2233B8440008785F /* LoginViewController.swift in Sources */,
 				EEC4CB552232FEBF005C6C83 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +367,7 @@
 		};
 		EEC4CB672232FEE1005C6C83 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CE3B99EAF3F328D080AA458 /* Pods-MapsFirstTime.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +386,7 @@
 		};
 		EEC4CB682232FEE1005C6C83 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8603555994C94EAFADE16399 /* Pods-MapsFirstTime.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
